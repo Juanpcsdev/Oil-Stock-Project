@@ -1,1 +1,1 @@
-"# Projeto com SharePoint e JupyterLab" 
+# Projeto com SharePoint e JupyterLab

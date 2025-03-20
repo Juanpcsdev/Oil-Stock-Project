@@ -1,4 +1,4 @@
-,Date,Datetime,Open_EYAC2,High_EYAC2,Low_EYAC2,Close_EYAC2,Volume_EYAC2,Price_Petro,Open_Petro,High_Petro,Low_Petro,Volume_Petro,Change%_EYAC2,Day_Ibovespa,Month_Ibovespa,Year_Ibovespa,Value_Ibovespa
+,Date,Datetime,Open_EYAC2,High_EYAC2,Low_EYAC2,Close_EYAC2,Volume_EYAC2,Price_Petro,Open_Petro,High_Petro,Low_Petro,Volume_Petro,Change%_Petro,Day_Ibovespa,Month_Ibovespa,Year_Ibovespa,Value_Ibovespa
 0,2010-01-04,2010-01-04 16:56:00,"37,56762146","37,93762146","37,43762146","37,93762146","13303743,87","81,51","79,63","81,79","79,63","263,54","2,71%",4,January,2010,"70045,08"
 1,2010-01-05,2010-01-05 16:56:00,"38,15421972","38,20421972","37,57421972","37,77421972","21396519,48","81,77","81,63","82,0","80,95","258,89","0,32%",5,January,2010,"70239,82"
 2,2010-01-06,2010-01-06 16:56:00,"38,10535714","38,80535714","38,10535714","38,80535714","18720547,15","83,18","81,43","83,52","80,85","370,06","1,72%",6,January,2010,"70729,34"

@@ -1,0 +1,5 @@
+DB_USER=neondb_owner
+DB_PASSWORD=npg_W0GCygte8mLw
+DB_HOST=ep-gentle-fire-a8yuaaxi-pooler.eastus2.azure.neon.tech
+DB_NAME=neondb
+DB_SSL_MODE=require

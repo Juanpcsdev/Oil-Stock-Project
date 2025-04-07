@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - 'camada_ouro/Join_dataframes_new_end.csv'
+      - 'camada_ouro/comparison_real_vs_preds_vs_erros_Dolar.csv'
+      - 'camada_ouro/comparison_real_vs_preds_vs_erros_Real.csv'
+      - 'camada_ouro/comparison_real_vs_preds_vs_erros_Petro.csv'
+
 
 jobs:
   run-notebook:

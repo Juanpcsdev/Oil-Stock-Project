@@ -8,7 +8,6 @@ on:
       - 'camada_ouro/comparison_real_vs_preds_vs_erros_Real.csv'
       - 'camada_ouro/comparison_real_vs_preds_vs_erros_Petro.csv'
 
-
 jobs:
   run-notebook:
     runs-on: ubuntu-latest
@@ -27,18 +26,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas sqlalchemy papermill psycopg2-binary ipykernel
 
-
       - name: Run notebook with Papermill
         env:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: neondb_owner
+          DB_PORT: 5432
+          DB_PASSWORD: npg_W0GCygte8mLw
+          DB_HOST: ep-gentle-fire-a8yuaaxi-pooler.eastus2.azure.neon.tech
+          DB_NAME: neondb
+          DB_SSL_MODE: require
         run: |
           papermill Notebooks/Database/database.ipynb Notebooks/Database/output.ipynb \
-            -p DB_HOST "$DB_HOST" \
-            -p DB_PORT "$DB_PORT" \
-            -p DB_NAME "$DB_NAME" \
             -p DB_USER "$DB_USER" \
-            -p DB_PASSWORD "$DB_PASSWORD"
+            -p DB_PASSWORD "$DB_PASSWORD" \
+            -p DB_HOST "$DB_HOST" \
+            -p DB_NAME "$DB_NAME" \
+            -p DB_PORT "$DB_PORT" \
+            -p DB_SSL_MODE "$DB_SSL_MODE"
